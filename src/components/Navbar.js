@@ -13,8 +13,10 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { SlChemistry } from "react-icons/sl";
 
 import { CgFileDocument } from "react-icons/cg";
+import { SiGithub } from "react-icons/si";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -75,6 +77,19 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
+                <SlChemistry
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                A/B test
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
@@ -104,12 +119,11 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/maruf1020"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <SiGithub style={{ fontSize: "1.2em" }} />{" "}
               </Button>
             </Nav.Item>
           </Nav>
