@@ -646,6 +646,13 @@ button:focus {
   padding-left: 80px !important;
 }
 
+.document-style {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 @media (max-width: 767px) {
   .resume-left {
     padding-right: 15px !important;
